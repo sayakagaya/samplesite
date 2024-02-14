@@ -1,0 +1,148 @@
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #333;
+}
+.inner {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+.title_area {
+  background-color: #fcf6f0;
+  position: relative;
+  height: 150px;
+}
+.section_title {
+  position: absolute;
+  display: block;
+  text-align: center;
+  z-index: 2;
+  top: 20px;
+  right: 0;
+  left: 0;
+}
+.section_title_main {
+  font-size: 3.75rem;
+}
+.section_title_forest {
+  right: 265px;
+  font-size: 3rem;
+}
+
+.mv {
+  width: 100%;
+  height: 500px;
+  background-color: #fff;
+  opacity: 0.8;
+}
+.mv img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 0 80%;
+  position: relative;
+  z-index: 0;
+}
+.mv::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 300px;
+  top: -180px;
+  transform: rotate(180deg) translateY(1px);
+  background-color: #fcf6f0;
+  border-radius: 300px 300px 0 0;
+  right: 0;
+  left: 0;
+  display: block;
+  margin: 0 auto;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.sub_title {
+  font-family: "Arvo", serif;
+  font-size: 2.8125rem;
+}
+.lineup_regular_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sixty) calc((100% - 96%) / 2);
+  justify-content: space-between;
+}
+.lineup_regular_item {
+  width: calc(96% / 3);
+  cursor: pointer;
+  position: relative;
+}
+.lineup_regular_item img {
+  width: 100%;
+  height: 237px;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.6);
+  transition: 0.5s;
+}
+.lineup_regular_item p {
+  font-size: 1.5rem;
+  padding-top: var(--twenty);
+  text-align: center;
+}
+.lineup_regular_item img:hover {
+  box-shadow: none;
+}
+
+/* モーダル */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+  display: none;
+}
+.modal-bg {
+  background-color: rgb(0, 0, 0, 0.53);
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-content > div {
+  position: relative;
+}
+.modal-content img {
+  width: 723px;
+  height: 487px;
+}
+.modal-closebtn {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  cursor: pointer;
+}
+.modal-closebtn > div {
+  width: var(--thirty);
+  height: var(--thirty);
+  position: relative;
+}
+.modal-closebtn > div > span {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 50%;
+  left: 50%;
+  background-color: #ffffff;
+}
+.modal-closebtn > div > span:first-of-type {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.modal-closebtn > div > span:last-of-type {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}

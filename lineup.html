@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo&family=League+Script&family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/lineup.css" />
+    <link rel="icon" href="img/Forest Bakery.png">
+    <title>LINE UP | FOREST BAKERY</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="title_area">
+        <h2 class="section_title">
+          <img
+            class="section_title_arch"
+            src="img/arch.png"
+            alt="FOREST BAKERY"
+          />
+          <span class="section_title_main">LINE UP</span>
+          <span class="section_title_forest">Forest</span>
+        </h2>
+      </div>
+      <div class="mv">
+        <img src="img/lineup/shop.jpeg" alt="店内の写真" />
+      </div>
+      <div class="inner">
+        <section class="limited">
+          <h3 class="sub_title">LIMITED LINE UP</h3>
+
+          <p>
+            季節の香り華やぐシーズナルメニューをはじめとした、期間限定の特別なメニューです。
+            <br />
+            ※提供期間中であっても、予告なく販売を終了する場合がございます。
+          </p>
+
+          <p></p>
+        </section>
+        <section class="regular">
+          <h3 class="sub_title">REGULAR LINE UP</h3>
+          <p>
+            定番メニューは、毎日の朝食やランチ、おやつにぴったりのおいしさが詰まっています。
+            <br />新鮮な素材と職人の手仕事で丁寧に焼き上げられたパンを、ぜひお楽しみください。
+          </p>
+
+          <ul class="lineup_regular_list">
+            <li class="lineup_regular_item" data-modal="modalOne">
+              <img src="img/lineup/lineup1.jpeg" alt="食パンの写真" />
+              <p class="lineup_item_name">毎日食パン</p>
+              <p class="lineup_item_description">
+                毎日でも食べられる飽きないパンです。
+              </p>
+            </li>
+          </ul>
+          <div id="modalOne" class="modal close">
+            <div class="modal-bg">
+              <div class="modal-content">
+                <div>
+                  <div class="modal-closebtn close">
+                    <div>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <img src="img/lineup/lineup1.jpeg" alt="食パンの写真" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+  <script src="js/lineup.js"></script>
+</html>

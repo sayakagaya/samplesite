@@ -17,39 +17,63 @@
       href="https://fonts.googleapis.com/css2?family=Arvo&family=League+Script&family=Noto+Sans+JP:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="img/Forest Bakery.png" />
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Forest Bakery</title>
   </head>
   <body>
     <header class="header">
-      <h1>
-        <a href="#">
-          <img src="img/logo.png" alt="FOREST BAKERY" />
-        </a>
-      </h1>
-      <nav class="header_nav">
-        <ul class="header_list">
-          <li class="header_item">
-            <a href="#about">ABOUT</a>
-          </li>
-          <li class="header_item">
-            <a href="#info">INFO</a>
-          </li>
-          <li class="header_item">
-            <a href="#lineup">LINE UP</a>
-          </li>
-          <li class="header_item">
-            <a href="#goods">GOODS</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header_menu">
+        <h1 class="top_logo_area">
+          <a href="index.html">
+            <img
+              class="top_logo"
+              src="img/Forest Bakery.png"
+              alt="FOREST BAKERY"
+            />
+          </a>
+        </h1>
+
+        <!-- ハンバーガーメニュー -->
+        <div class="humburger_area">
+          <div class="humberger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="header_menu_body">
+        <div class="sidebar">
+          <ul class="sidebar_links">
+            <li class="sidebar_item">
+              <a href="#about" class="link">ABOUT</a>
+            </li>
+            <li class="sidebar_item">
+              <a href="#info" class="link">INFO</a>
+            </li>
+            <li class="sidebar_item">
+              <a href="#lineup" class="link">LINE UP</a>
+            </li>
+            <li class="sidebar_item">
+              <a href="#goods" class="link">GOODS</a>
+            </li>
+          </ul>
+        </div>
+        <div class="side_logo">
+          <img src="img/top.png" alt="ロゴ" />
+        </div>
+      </div>
     </header>
     <main class="main">
       <div class="mv">
         <img class="mv_img" src="img/mv.png" alt="パンの写真" />
         <div class="smoke"></div>
-        <img class="mv_logo" src="img/top.png" alt="メインロゴ" />
+        <div class="logo_area">
+          <img class="mv_logo" src="img/top.png" alt="メインロゴ" />
+        </div>
       </div>
       <section class="about section fade" id="about">
         <div class="wrapper">
@@ -59,8 +83,8 @@
               src="img/arch.png"
               alt="FOREST BAKERY"
             />
-            <span class="section_title_main">ABOUT</span>
-            <span class="section_title_forest">Forest</span>
+            <span class="section_title_main eachTextAnime">ABOUT</span>
+            <span class="section_title_forest eachTextAnime">Forest</span>
           </h2>
           <div class="about_content">
             <div class="swiper_container">
@@ -99,8 +123,8 @@
             src="img/arch.png"
             alt="FOREST BAKERY"
           />
-          <span class="section_title_main">INFO</span>
-          <span class="section_title_forest">Forest</span>
+          <span class="section_title_main eachTextAnime">INFO</span>
+          <span class="section_title_forest eachTextAnime">Forest</span>
         </h2>
         <div class="info_container wrapper">
           <table class="info_table">
@@ -146,20 +170,20 @@
             src="img/arch.png"
             alt="FOREST BAKERY"
           />
-          <span class="section_title_main">LINE UP</span>
-          <span class="section_title_forest">Forest</span>
+          <span class="section_title_main eachTextAnime">LINE UP</span>
+          <span class="section_title_forest eachTextAnime">Forest</span>
         </h2>
-        <img class="lineup_img" src="img/lineup_bg.png" alt="パンのお皿" />
         <div class="lineup_wrapper wrapper">
           <p class="lineup_txt">
             当店では素材にこだわり、丁寧に手作りされたパンを提供しています。<br />
             どれも焼き立ての香りと味わいが楽しめる、心温まるパンたちです。<br />
             ぜひお気に入りの一品を見つけてください。
           </p>
-          <a href="#" class="more_btn">
+          <a href="lineup.html" class="more_btn">
             <span class="more_btn_txt">MORE</span>
           </a>
         </div>
+        <img class="lineup_img" src="img/lineup_bg.png" alt="パンのお皿" />
       </section>
       <section class="goods section fade" id="goods">
         <div class="wrapper">
@@ -169,8 +193,8 @@
               src="img/arch.png"
               alt="FOREST BAKERY"
             />
-            <span class="section_title_main">GOODS</span>
-            <span class="section_title_forest">Forest</span>
+            <span class="section_title_main eachTextAnime">GOODS</span>
+            <span class="section_title_forest eachTextAnime">Forest</span>
           </h2>
           <div class="goods_content">
             <img class="goods1" src="img/goods1.png" alt="ジャム" />
@@ -210,5 +234,5 @@
     src="https://kit.fontawesome.com/be9648ab57.js"
     crossorigin="anonymous"
   ></script>
-  <script src="main.js"></script>
+  <script src="js/main.js"></script>
 </html>
