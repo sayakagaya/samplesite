@@ -20,6 +20,7 @@
     <link rel="icon" href="img/Forest Bakery.png" />
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/common.css" />
     <title>Forest Bakery</title>
   </head>
   <body>
@@ -44,47 +45,81 @@
           </div>
         </div>
       </div>
-
+      <!-- ナビゲーション -->
       <div class="header_menu_body">
+        <div class="side_image"></div>
         <div class="sidebar">
-          <ul class="sidebar_links">
-            <li class="sidebar_item">
-              <a href="#about" class="link">ABOUT</a>
-            </li>
-            <li class="sidebar_item">
-              <a href="#info" class="link">INFO</a>
-            </li>
-            <li class="sidebar_item">
-              <a href="#lineup" class="link">LINE UP</a>
-            </li>
-            <li class="sidebar_item">
-              <a href="#goods" class="link">GOODS</a>
-            </li>
-          </ul>
+          <div class="sidebar_inner">
+            <ul class="sidebar_links">
+              <li class="sidebar_item">
+                <a href="#" class="link">TOP</a>
+              </li>
+              <li class="sidebar_item">
+                <a href="#about" class="link">ABOUT</a>
+              </li>
+              <li class="sidebar_item">
+                <a href="#info" class="link">INFO</a>
+              </li>
+              <li class="sidebar_item">
+                <a href="#lineup" class="link">LINE UP</a>
+              </li>
+              <li class="sidebar_item">
+                <a href="#goods" class="link">GOODS</a>
+              </li>
+            </ul>
+            <div class="sidebar_sns_area">
+              <p>FOREST BAKERY</p>
+              <ul class="sidebar_links_sns">
+                <li class="sidebar_item_sns">
+                  <a href="#"
+                    ><img
+                      src="img/instagram_logo.svg"
+                      alt="インスタグラムのロゴ"
+                  /></a>
+                </li>
+                <li class="sidebar_item_sns">
+                  <a href="#"
+                    ><img src="img/Twitter_logo.svg" alt="ツイッターのロゴ"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="side_logo">
-          <img src="img/top.png" alt="ロゴ" />
+        <div class="side_logo_area">
+          <div class="side_smoke"></div>
+          <img class="side_logo" src="img/top.png" alt="ロゴ" />
         </div>
       </div>
     </header>
     <main class="main">
       <div class="mv">
-        <img class="mv_img" src="img/mv.png" alt="パンの写真" />
+        <div class="slider">
+          <div class="image"></div>
+          <div class="image"></div>
+          <div class="image"></div>
+        </div>
         <div class="smoke"></div>
         <div class="logo_area">
           <img class="mv_logo" src="img/top.png" alt="メインロゴ" />
         </div>
+        <div class="scrolldown"><span>Scroll</span></div>
       </div>
       <section class="about section fade" id="about">
         <div class="wrapper">
           <h2 class="section_title">
-            <img
-              class="section_title_arch"
-              src="img/arch.png"
-              alt="FOREST BAKERY"
-            />
-            <span class="section_title_main eachTextAnime">ABOUT</span>
-            <span class="section_title_forest eachTextAnime">Forest</span>
+            <div class="section_title_arch_container">
+              <p class="section_title_arch_txt">
+                <span>F</span><span>O</span><span>R</span><span>E</span
+                ><span>S</span><span>T</span><span>B</span><span>A</span
+                ><span>K</span><span>E</span><span>R</span><span>Y</span>
+              </p>
+            </div>
+            <div class="section_title_main_area">
+              <span class="section_title_main">ABOUT</span>
+            </div>
+
+            <span class="section_title_forest">Forest</span>
           </h2>
           <div class="about_content">
             <div class="swiper_container">
@@ -104,13 +139,16 @@
               <div class="swiper-pagination"></div>
             </div>
             <div class="about_txt">
+              <h3>
+                <span>FOREST BAKERYとは？</span>
+                ABOUT FOREST
+              </h3>
               <p>
-                自然の恵みと温かみあふれる雰囲気が魅力のパン屋さんです。森の中に迷い込んだかのような感覚を味わいながら、新鮮で美味しいパンを提供しています。
+                自然の恵みと温かみあふれる雰囲気が魅力のパン屋さんです。<br />
+                森の中に迷い込んだかのような感覚を味わいながら、新鮮で美味しいパンを提供しています。
                 <br /><br />
-                当店では、厳選された素材と丁寧な手作りで焼き上げたパンが自慢です。
-                毎朝、店内で心を込めて焼き上げた焼き立てのパンの香りが店内に広がり、お客様をお迎えします。
-                <br /><br />
-                小麦の香りや焼きたてのふわふわ感を存分に楽しんでいただけます。
+                厳選された素材と丁寧な手作りで焼き上げたパンが自慢です。
+                毎朝、店内で心を込めて焼き上げたパンの香りが店内に広がっています。
               </p>
             </div>
           </div>
@@ -118,37 +156,19 @@
       </section>
       <section class="info section fade" id="info">
         <h2 class="section_title">
-          <img
-            class="section_title_arch"
-            src="img/arch.png"
-            alt="FOREST BAKERY"
-          />
-          <span class="section_title_main eachTextAnime">INFO</span>
-          <span class="section_title_forest eachTextAnime">Forest</span>
+          <div class="section_title_arch_container">
+            <p class="section_title_arch_txt">
+              <span>F</span><span>O</span><span>R</span><span>E</span
+              ><span>S</span><span>T</span><span>B</span><span>A</span
+              ><span>K</span><span>E</span><span>R</span><span>Y</span>
+            </p>
+          </div>
+          <div class="section_title_main_area">
+            <span class="section_title_main">INFO</span>
+            <span class="section_title_forest">Forest</span>
+          </div>
         </h2>
         <div class="info_container wrapper">
-          <table class="info_table">
-            <tr>
-              <th>住所：</th>
-              <td>〒639-1058 奈良県大和郡山市XX-XX</td>
-            </tr>
-            <tr>
-              <th>TEL：</th>
-              <td>0743-XX-XXXX</td>
-            </tr>
-            <tr>
-              <th>営業時間：</th>
-              <td>8:00〜20:00</td>
-            </tr>
-            <tr>
-              <th>アクセス：</th>
-              <td>近鉄郡山駅から徒歩10分</td>
-            </tr>
-            <tr>
-              <th>定休日：</th>
-              <td>毎週月曜日（祝日の場合は翌日火曜日）</td>
-            </tr>
-          </table>
           <div class="map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26257.766117769184!2d135.72284638416258!3d34.649127217997794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001252896106037%3A0x21f84fc2d1cb75cb!2z44CSNjM5LTEwNTgg5aWI6Imv55yM5aSn5ZKM6YOh5bGx5biC55-i55Sw55S6!5e0!3m2!1sja!2sjp!4v1707491931479!5m2!1sja!2sjp"
@@ -161,17 +181,39 @@
             ></iframe>
             <p class="welcome_comment">WELCOME TO FOREST BAKERY!!</p>
           </div>
+          <div class="map_btn">
+            <a href="https://maps.app.goo.gl/VhZm5F4NDmKJiBMVA">GOOGLE MAP</a>
+          </div>
+          <div class="description_area">
+            <dl class="info_description">
+              <dt>ADDRESS</dt>
+              <dd>〒639-1058 奈良県大和郡山市XX-XX</dd>
+              <dt>ACCESS</dt>
+              <dd>近鉄郡山駅から徒歩10分</dd>
+              <dt>TEL</dt>
+              <dd>0743-XX-XXXX</dd>
+              <dt>OPENING HOURS</dt>
+              <dd>8:00〜20:00</dd>
+              <dt>REGULARY CLOSED</dt>
+              <dd>毎週月曜日（祝日の場合は翌日火曜日）</dd>
+            </dl>
+          </div>
         </div>
       </section>
       <section class="lineup section fade" id="lineup">
         <h2 class="section_title">
-          <img
-            class="section_title_arch"
-            src="img/arch.png"
-            alt="FOREST BAKERY"
-          />
-          <span class="section_title_main eachTextAnime">LINE UP</span>
-          <span class="section_title_forest eachTextAnime">Forest</span>
+          <div class="section_title_arch_container">
+            <p class="section_title_arch_txt">
+              <span>F</span><span>O</span><span>R</span><span>E</span
+              ><span>S</span><span>T</span><span>B</span><span>A</span
+              ><span>K</span><span>E</span><span>R</span><span>Y</span>
+            </p>
+          </div>
+          <div class="section_title_main_area">
+            <span class="section_title_main">LINEUP</span>
+          </div>
+
+          <span class="section_title_forest">Forest</span>
         </h2>
         <div class="lineup_wrapper wrapper">
           <p class="lineup_txt">
@@ -186,17 +228,30 @@
         <img class="lineup_img" src="img/lineup_bg.png" alt="パンのお皿" />
       </section>
       <section class="goods section fade" id="goods">
-        <div class="wrapper">
+        <div class="goods_wrapper">
           <h2 class="section_title">
-            <img
-              class="section_title_arch"
-              src="img/arch.png"
-              alt="FOREST BAKERY"
-            />
-            <span class="section_title_main eachTextAnime">GOODS</span>
-            <span class="section_title_forest eachTextAnime">Forest</span>
+            <div class="section_title_arch_container">
+              <p class="section_title_arch_txt">
+                <span>F</span><span>O</span><span>R</span><span>E</span
+                ><span>S</span><span>T</span><span>B</span><span>A</span
+                ><span>K</span><span>E</span><span>R</span><span>Y</span>
+              </p>
+            </div>
+            <div class="section_title_main_area">
+              <span class="section_title_main">GOODS</span>
+            </div>
+
+            <span class="section_title_forest">Forest</span>
           </h2>
+
           <div class="goods_content">
+            <div class="circle_container">
+              <p class="circle_txt">
+                <span>F</span><span>O</span><span>R</span><span>E</span
+                ><span>S</span><span>T</span><span>B</span><span>A</span
+                ><span>K</span><span>E</span><span>R</span><span>Y</span>
+              </p>
+            </div>
             <img class="goods1" src="img/goods1.png" alt="ジャム" />
             <img class="goods2" src="img/goods2.png" alt="コーヒー豆" />
             <img class="goods3" src="img/goods3.png" alt="はちみつ" />
@@ -204,7 +259,6 @@
             <div class="goods_txt">
               <p>
                 当店では、美味しくて魅力的なパンを提供するだけでなく、<br />
-                お客様に心地よいショッピング体験をお届けするために、<br />
                 さまざまな魅力的なグッズを用意しています。
               </p>
 
@@ -218,7 +272,6 @@
     </main>
     <footer class="footer">
       <div class="welcome_area">
-        <img src="img/shop_welcome.png" alt="お店の外観" />
         <div class="smoke"></div>
         <p class="welcome_txt">WELCOME TO <br />FOREST BAKERY!!</p>
       </div>

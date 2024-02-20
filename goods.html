@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo&family=League+Script&family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/Forest Bakery.png" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/goods.css" />
+    <title>GOODS| FOREST BAKERY</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_menu">
+        <h1 class="top_logo_area">
+          <a href="index.html">
+            <img
+              class="top_logo"
+              src="img/Forest Bakery.png"
+              alt="FOREST BAKERY"
+            />
+          </a>
+        </h1>
+
+        <!-- ハンバーガーメニュー -->
+        <div class="humburger_area">
+          <div class="humberger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <!-- ナビゲーション -->
+      <div class="header_menu_body">
+        <div class="side_image"></div>
+        <div class="sidebar">
+          <div class="sidebar_inner">
+            <ul class="sidebar_links">
+              <li class="sidebar_item">
+                <a href="index.html" class="link">TOP</a>
+              </li>
+              <li class="sidebar_item">
+                <a href="index.html#about" class="link">ABOUT</a>
+              </li>
+              <li class="sidebar_item">
+                <a href="index.html#info" class="link">INFO</a>
+              </li>
+              <li class="sidebar_item">
+                <a href="lineup.html" class="link">LINE UP</a>
+              </li>
+              <li class="sidebar_item">
+                <a href="goods.html" class="link">GOODS</a>
+              </li>
+            </ul>
+            <div class="sidebar_sns_area">
+              <p>FOREST BAKERY</p>
+              <ul class="sidebar_links_sns">
+                <li class="sidebar_item_sns">
+                  <a href="#"
+                    ><img
+                      src="img/instagram_logo.svg"
+                      alt="インスタグラムのロゴ"
+                  /></a>
+                </li>
+                <li class="sidebar_item_sns">
+                  <a href="#"
+                    ><img src="img/Twitter_logo.svg" alt="ツイッターのロゴ"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="side_logo_area">
+          <div class="side_smoke"></div>
+          <img class="side_logo" src="img/top.png" alt="ロゴ" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="title_area">
+        <h2 class="section_title">
+          <div class="section_title_arch_container">
+            <p class="section_title_arch_txt">
+              <span>F</span><span>O</span><span>R</span><span>E</span
+              ><span>S</span><span>T</span><span>B</span><span>A</span
+              ><span>K</span><span>E</span><span>R</span><span>Y</span>
+            </p>
+          </div>
+          <div class="section_title_main_area">
+            <span class="section_title_main">GOODS</span>
+          </div>
+
+          <span class="section_title_forest">Forest</span>
+        </h2>
+      </div>
+
+      <div class="mv">
+        <img src="img/goods/goods_mv.jpeg" alt="ジャムの写真" />
+      </div>
+      <div class="inner">
+        <section class="regular">
+          <h3 class="sub_title">REGULAR GOODS</h3>
+          <p class="description_txt">
+            自家製の風味豊かなはちみつや手作りジャムなどこだわりの自家製グッズを取り揃えています。
+            <br />ご家庭でのお食事をより楽しく、贅沢なものにしてくれるアイテムばかりです。ぜひご覧ください。
+          </p>
+
+          <ul class="goods_regular_list">
+            <li class="goods_regular_item" data-modal="modalOne">
+              <div class="img_box">
+                <img src="img/goods/goods1.jpg" alt="いちごジャムの写真" />
+              </div>
+              <p class="goods_item_name">いちごジャム</p>
+              <p class="goods_item_description"></p>
+            </li>
+            <li class="goods_regular_item" data-modal="modalTwo">
+              <div class="img_box">
+                <img src="img/goods/goods2.jpeg" alt="さくらんぼジャムの写真" />
+              </div>
+              <p class="goods_item_name">さくらんぼジャム</p>
+              <p class="goods_item_description"></p>
+            </li>
+            <li class="goods_regular_item" data-modal="modalThree">
+              <div class="img_box">
+                <img
+                  src="img/goods/goods3.jpeg"
+                  alt="ミックスベリージャムの写真"
+                />
+              </div>
+              <p class="goods_item_name">ミックスベリージャム</p>
+              <p class="goods_item_description"></p>
+            </li>
+            <li class="goods_regular_item" data-modal="modalFour">
+              <div class="img_box">
+                <img
+                  src="img/goods/goods4.jpeg"
+                  alt="ミックスベリージャムの写真"
+                />
+              </div>
+              <p class="goods_item_name">ラズベリージャム</p>
+              <p class="goods_item_description"></p>
+            </li>
+            <li class="goods_regular_item" data-modal="modalFive">
+              <div class="img_box">
+                <img
+                  src="img/goods/goods5.jpeg"
+                  alt="ブルーベリージャムの写真"
+                />
+              </div>
+              <p class="goods_item_name">ブルーベリージャム</p>
+              <p class="goods_item_description"></p>
+            </li>
+            <li class="goods_regular_item" data-modal="modalSix">
+              <div class="img_box">
+                <img src="img/goods/goods6.jpeg" alt="はちみつ豆の写真" />
+              </div>
+              <p class="goods_item_name">はちみつ</p>
+              <p class="goods_item_description"></p>
+            </li>
+            <li class="goods_regular_item" data-modal="modalSeven">
+              <div class="img_box">
+                <img src="img/goods/goods7.jpeg" alt="バターの写真" />
+              </div>
+              <p class="goods_item_name">バター</p>
+              <p class="goods_item_description"></p>
+            </li>
+            <li class="goods_regular_item" data-modal="modalEight">
+              <div class="img_box">
+                <img src="img/goods/goods8.jpg" alt="コーヒー豆の写真" />
+              </div>
+              <p class="goods_item_name">コーヒー豆</p>
+              <p class="goods_item_description"></p>
+            </li>
+          </ul>
+          <div id="modalOne" class="modal close">
+            <div class="modal-bg">
+              <div class="modal-closebtn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div>
+                  <img src="img/goods/goods1.jpg" alt="いちごジャムの写真" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modalTwo" class="modal close">
+            <div class="modal-bg">
+              <div class="modal-closebtn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div>
+                  <img
+                    src="img/goods/goods2.jpeg"
+                    alt="さくらんぼジャムの写真"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modalThree" class="modal close">
+            <div class="modal-bg">
+              <div class="modal-closebtn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div>
+                  <img
+                    src="img/goods/goods3.jpeg"
+                    alt="ミックスベリージャムの写真"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modalFour" class="modal close">
+            <div class="modal-bg">
+              <div class="modal-closebtn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div>
+                  <img
+                    src="img/goods/goods4.jpeg"
+                    alt="ミックスベリージャムの写真"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modalFive" class="modal close">
+            <div class="modal-bg">
+              <div class="modal-closebtn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div>
+                  <img
+                    src="img/goods/goods5.jpeg"
+                    alt="ブルーベリージャムの写真"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modalSix" class="modal close">
+            <div class="modal-bg">
+              <div class="modal-closebtn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div>
+                  <img src="img/goods/goods6.jpeg" alt="はちみつ豆の写真" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modalSeven" class="modal close">
+            <div class="modal-bg">
+              <div class="modal-closebtn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div>
+                  <img src="img/goods/goods7.jpeg" alt="バターの写真" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modalEight" class="modal close">
+            <div class="modal-bg">
+              <div class="modal-closebtn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div>
+                  <img src="img/goods/goods8.jpg" alt="コーヒー豆の写真" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modalNine" class="modal close">
+            <div class="modal-bg">
+              <div class="modal-closebtn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div>
+                  <img src="img/lineup/lineup9.jpeg" alt="焼きそばパンの写真" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modalTen" class="modal close">
+            <div class="modal-bg">
+              <div class="modal-closebtn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div>
+                  <img src="img/lineup/lineup10.jpeg" alt="メロンパンの写真" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modalEleven" class="modal close">
+            <div class="modal-bg">
+              <div class="modal-closebtn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div>
+                  <img
+                    src="img/lineup/lineup11.jpeg"
+                    alt="プレッツェルの写真"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modalTwelve" class="modal close">
+            <div class="modal-bg">
+              <div class="modal-closebtn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div>
+                  <img src="img/lineup/lineup12.jpeg" alt="くるみパンの写真" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="welcome_area">
+          <div class="smoke"></div>
+          <p class="welcome_txt">WELCOME TO <br />FOREST BAKERY!!</p>
+        </div>
+        <div class="footer_txt_area">
+          <p id="page-top"><a class="pagetop" href="#">PAGE TOP</a></p>
+          <p class="footer_shopname">FOREST BAKERY</p>
+          <p class="footer_adress">〒639-1058 奈良県大和郡山市XX-XX</p>
+        </div>
+      </footer>
+    </main>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/be9648ab57.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="js/goods.js"></script>
+  <script src="js/main.js"></script>
+</html>

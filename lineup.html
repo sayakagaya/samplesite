@@ -17,26 +17,99 @@
       href="https://fonts.googleapis.com/css2?family=Arvo&family=League+Script&family=Noto+Sans+JP:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="img/Forest Bakery.png" />
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/lineup.css" />
-    <link rel="icon" href="img/Forest Bakery.png">
     <title>LINE UP | FOREST BAKERY</title>
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <div class="header_menu">
+        <h1 class="top_logo_area">
+          <a href="index.html">
+            <img
+              class="top_logo"
+              src="img/Forest Bakery.png"
+              alt="FOREST BAKERY"
+            />
+          </a>
+        </h1>
+
+        <!-- ハンバーガーメニュー -->
+        <div class="humburger_area">
+          <div class="humberger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <!-- ナビゲーション -->
+      <div class="header_menu_body">
+        <div class="side_image"></div>
+        <div class="sidebar">
+          <div class="sidebar_inner">
+            <ul class="sidebar_links">
+              <li class="sidebar_item">
+                <a href="index.html" class="link">TOP</a>
+              </li>
+              <li class="sidebar_item">
+                <a href="index.html#about" class="link">ABOUT</a>
+              </li>
+              <li class="sidebar_item">
+                <a href="index.html#info" class="link">INFO</a>
+              </li>
+              <li class="sidebar_item">
+                <a href="lineup.html" class="link">LINE UP</a>
+              </li>
+              <li class="sidebar_item">
+                <a href="#goods" class="link">GOODS</a>
+              </li>
+            </ul>
+            <div class="sidebar_sns_area">
+              <p>FOREST BAKERY</p>
+              <ul class="sidebar_links_sns">
+                <li class="sidebar_item_sns">
+                  <a href="#"
+                    ><img
+                      src="img/instagram_logo.svg"
+                      alt="インスタグラムのロゴ"
+                  /></a>
+                </li>
+                <li class="sidebar_item_sns">
+                  <a href="#"
+                    ><img src="img/Twitter_logo.svg" alt="ツイッターのロゴ"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="side_logo_area">
+          <div class="side_smoke"></div>
+          <img class="side_logo" src="img/top.png" alt="ロゴ" />
+        </div>
+      </div>
+    </header>
     <main>
       <div class="title_area">
         <h2 class="section_title">
-          <img
-            class="section_title_arch"
-            src="img/arch.png"
-            alt="FOREST BAKERY"
-          />
-          <span class="section_title_main">LINE UP</span>
+          <div class="section_title_arch_container">
+            <p class="section_title_arch_txt">
+              <span>F</span><span>O</span><span>R</span><span>E</span
+              ><span>S</span><span>T</span><span>B</span><span>A</span
+              ><span>K</span><span>E</span><span>R</span><span>Y</span>
+            </p>
+          </div>
+          <div class="section_title_main_area">
+            <span class="section_title_main">LINEUP</span>
+          </div>
+
           <span class="section_title_forest">Forest</span>
         </h2>
       </div>
+
       <div class="mv">
         <img src="img/lineup/shop.jpeg" alt="店内の写真" />
       </div>
@@ -44,48 +117,452 @@
         <section class="limited">
           <h3 class="sub_title">LIMITED LINE UP</h3>
 
-          <p>
+          <p class="description_txt">
             季節の香り華やぐシーズナルメニューをはじめとした、期間限定の特別なメニューです。
             <br />
             ※提供期間中であっても、予告なく販売を終了する場合がございます。
           </p>
 
-          <p></p>
+          <ul class="lineup_limited_list">
+            <li class="lineup_limited_item" data-modal="modalOne_limited">
+              <div class="img_box">
+                <img
+                  src="img/lineup/special1.jpg"
+                  alt="いちごデニッシュの写真"
+                />
+              </div>
+              <p class="lineup_item_name">いちごデニッシュ</p>
+              <p class="lineup_item_description">
+                春の訪れを感じさせる、爽やかないちごの風味が楽しめるデニッシュです。ふんわりとしたパフ生地の上に、ジューシーないちごが丁寧に並べられ、軽やかなカスタードクリームと一緒に焼き上げられます。
+              </p>
+            </li>
+            <li class="lineup_limited_item" data-modal="modalTwo_limited">
+              <div class="img_box">
+                <img
+                  src="img/lineup/special2.jpg"
+                  alt="さくらんぼタルトの写真"
+                />
+              </div>
+              <p class="lineup_item_name">さくらんぼタルト</p>
+              <p class="lineup_item_description">
+                華やかなさくらんぼがたっぷりと贅沢に使われたタルトです。サクサクのタルト生地の上に、みずみずしいさくらんぼが美しく並べられ、ほんのり甘いベースクリームが優しく包み込みます。
+              </p>
+            </li>
+            <li class="lineup_limited_item" data-modal="modalThree_limited">
+              <div class="img_box">
+                <img src="img/lineup/special3.jpg" alt="フルーツサンドの写真" />
+              </div>
+              <p class="lineup_item_name">季節のフルーツサンド</p>
+              <p class="lineup_item_description">
+                カラフルで爽快なフルーツがたっぷり詰まったサンドイッチです。ふわふわのパンには、新鮮な季節のフルーツがぎっしりと盛り付けられ、フレッシュな風味が口いっぱいに広がります。
+              </p>
+            </li>
+            <li class="lineup_limited_item" data-modal="modalFour_limited">
+              <div class="img_box">
+                <img
+                  src="img/lineup/special4.jpg"
+                  alt="いちごのクロワッサンの写真"
+                />
+              </div>
+              <p class="lineup_item_name">いちごのクロワッサン</p>
+              <p class="lineup_item_description">
+                甘くてジューシーないちごが贅沢に使われた、華やかなクロワッサンです。バターの香り高い生地の中には、いちごのスライスがたっぷりと挟まれ、焼き上がるといちごの甘酸っぱさがクロワッサン全体に広がります。
+              </p>
+            </li>
+          </ul>
+
+          <div id="modalOne_limited" class="modal close">
+            <div class="modal-bg">
+              <div class="modal-closebtn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div>
+                  <img
+                    src="img/lineup/special1.jpg"
+                    alt="いちごデニッシュの写真"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modalTwo_limited" class="modal close">
+            <div class="modal-bg">
+              <div class="modal-closebtn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div>
+                  <img
+                    src="img/lineup/special2.jpg"
+                    alt="さくらんぼタルトの写真"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modalThree_limited" class="modal close">
+            <div class="modal-bg">
+              <div class="modal-closebtn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div>
+                  <img
+                    src="img/lineup/special3.jpg"
+                    alt="フルーツサンドの写真"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modalFour_limited" class="modal close">
+            <div class="modal-bg">
+              <div class="modal-closebtn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div>
+                  <img
+                    src="img/lineup/special4.jpg"
+                    alt="いちごのクロワッサンの写真"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
         <section class="regular">
           <h3 class="sub_title">REGULAR LINE UP</h3>
-          <p>
+          <p class="description_txt">
             定番メニューは、毎日の朝食やランチ、おやつにぴったりのおいしさが詰まっています。
             <br />新鮮な素材と職人の手仕事で丁寧に焼き上げられたパンを、ぜひお楽しみください。
           </p>
 
           <ul class="lineup_regular_list">
             <li class="lineup_regular_item" data-modal="modalOne">
-              <img src="img/lineup/lineup1.jpeg" alt="食パンの写真" />
-              <p class="lineup_item_name">毎日食パン</p>
+              <div class="img_box">
+                <img src="img/lineup/lineup1.jpeg" alt="食パンの写真" />
+              </div>
+              <p class="lineup_item_name">食パン</p>
               <p class="lineup_item_description">
-                毎日でも食べられる飽きないパンです。
+                ふんわりと包まれた食パンは、焼きたての香りが誘う、至福のひととき。外側はサクサク、内側はふんわりとした食感が口いっぱいに広がり、バターのような風味が口の中に広がります。毎日でも食べられる飽きないパンです。
+              </p>
+            </li>
+            <li class="lineup_regular_item" data-modal="modalTwo">
+              <div class="img_box">
+                <img src="img/lineup/lineup2.jpeg" alt="カレーパンの写真" />
+              </div>
+              <p class="lineup_item_name">カレーパン</p>
+              <p class="lineup_item_description">
+                外はサクッと、中はほどよいスパイスが効いたカレーが詰まった、風味豊かな菓子パンです。一口食べると、香り高いカレーの香りとふわりとしたパンの食感が口いっぱいに広がります。
+              </p>
+            </li>
+            <li class="lineup_regular_item" data-modal="modalThree">
+              <div class="img_box">
+                <img src="img/lineup/lineup3.jpeg" alt="クロワッサンの写真" />
+              </div>
+              <p class="lineup_item_name">クロワッサン</p>
+              <p class="lineup_item_description">
+                外側はパリッとしていて、内側はしっとりとしたバターの風味が広がります。朝食やコーヒータイムに最適で、一口食べれば贅沢な味わいが口いっぱいに広がります。
+              </p>
+            </li>
+            <li class="lineup_regular_item" data-modal="modalFour">
+              <div class="img_box">
+                <img src="img/lineup/lineup4.jpg" alt="クリームパンの写真" />
+              </div>
+              <p class="lineup_item_name">クリームパン</p>
+              <p class="lineup_item_description">
+                口どけの良い生地に、豊かなバニラクリームがたっぷり詰まった贅沢な一品です。パンのふんわりとした食感と、クリームのなめらかな甘さが絶妙にマッチし、一口食べると幸せな気持ちに包まれます。
+              </p>
+            </li>
+            <li class="lineup_regular_item" data-modal="modalFive">
+              <div class="img_box">
+                <img src="img/lineup/lineup5.jpeg" alt="ベーグルの写真" />
+              </div>
+              <p class="lineup_item_name">ベーグル</p>
+              <p class="lineup_item_description">
+                手作りの丁寧な製法で仕上げた、もちもちとした食感が特徴のベーグルです。外側は軽くカリッと、内側はしっかりとした食感があり、トーストしてもその独特の食感が楽しめます。
+              </p>
+            </li>
+            <li class="lineup_regular_item" data-modal="modalSix">
+              <div class="img_box">
+                <img src="img/lineup/lineup6.jpeg" alt="レーズンパンの写真" />
+              </div>
+              <p class="lineup_item_name">レーズンパン</p>
+              <p class="lineup_item_description">
+                自家製の柔らかな生地に、ふんだんに練り込まれたプレミアムなレーズンが、豊かな風味を引き出します。
+              </p>
+            </li>
+            <li class="lineup_regular_item" data-modal="modalSeven">
+              <div class="img_box">
+                <img src="img/lineup/lineup7.jpeg" alt="ロールパンの写真" />
+              </div>
+              <p class="lineup_item_name">ロールパン</p>
+              <p class="lineup_item_description">
+                しっとりとした生地が特徴の当店自慢のロールぱん。外側はふんわり、内側はもっちりとした食感が楽しめます。
+              </p>
+            </li>
+            <li class="lineup_regular_item" data-modal="modalEight">
+              <div class="img_box">
+                <img src="img/lineup/lineup8.jpeg" alt="あんぱんの写真" />
+              </div>
+              <p class="lineup_item_name">あんぱん</p>
+              <p class="lineup_item_description">
+                ふわふわの生地が、口の中でやわらかく溶ける至福の一品。厳選された上質な小豆を使用した甘さ控えめのあんこが、パンとのハーモニーを生み出します。
+              </p>
+            </li>
+            <li class="lineup_regular_item" data-modal="modalNine">
+              <div class="img_box">
+                <img src="img/lineup/lineup9.jpeg" alt="焼きそばパンの写真" />
+              </div>
+              <p class="lineup_item_name">焼きそばパン</p>
+              <p class="lineup_item_description">
+                熱々の焼きそばが、ふんわりとしたパン生地に包まれています。一口食べると、麺のもちもちとした食感と、香ばしくてスパイシーなソースの風味が口いっぱいに広がります。
+              </p>
+            </li>
+            <li class="lineup_regular_item" data-modal="modalTen">
+              <div class="img_box">
+                <img src="img/lineup/lineup10.jpeg" alt="メロンパンの写真" />
+              </div>
+              <p class="lineup_item_name">メロンパン</p>
+              <p class="lineup_item_description">
+                外側はサクッと、内側はふわふわ。まるで夏の風を感じるような、爽やかな香りが広がるメロンパンです。独特のメロン風味のクッキー生地に、やさしい甘さのバタークリームが詰まっています。
+              </p>
+            </li>
+            <li class="lineup_regular_item" data-modal="modalEleven">
+              <div class="img_box">
+                <img src="img/lineup/lineup11.jpeg" alt="プレッツェルの写真" />
+              </div>
+              <p class="lineup_item_name">プレッツェル</p>
+              <p class="lineup_item_description">
+                外側はカリッと、内側はもっちり。塩味がほどよく効いた生地が、パリッとした食感を楽しませます。手のひらサイズで持ち運びにも便利で、ランチやおやつの時間にぴったりです。
+              </p>
+            </li>
+            <li class="lineup_regular_item" data-modal="modalTwelve">
+              <div class="img_box">
+                <img src="img/lineup/lineup12.jpeg" alt="くるみパンの写真" />
+              </div>
+              <p class="lineup_item_name">くるみパン</p>
+              <p class="lineup_item_description">
+                ふんわりとした生地に、香ばしいくるみがたっぷりと練りこまれた、贅沢な一品です。一口食べると、口の中に広がるくるみの風味と、ほんのりした甘さが心地よいバランスを生み出します。
               </p>
             </li>
           </ul>
           <div id="modalOne" class="modal close">
             <div class="modal-bg">
+              <div class="modal-closebtn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
               <div class="modal-content">
                 <div>
-                  <div class="modal-closebtn close">
-                    <div>
-                      <span></span>
-                      <span></span>
-                    </div>
-                  </div>
                   <img src="img/lineup/lineup1.jpeg" alt="食パンの写真" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modalTwo" class="modal close">
+            <div class="modal-bg">
+              <div class="modal-closebtn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div>
+                  <img src="img/lineup/lineup2.jpeg" alt="カレーパンの写真" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modalThree" class="modal close">
+            <div class="modal-bg">
+              <div class="modal-closebtn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div>
+                  <img src="img/lineup/lineup3.jpeg" alt="クロワッサンの写真" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modalFour" class="modal close">
+            <div class="modal-bg">
+              <div class="modal-closebtn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div>
+                  <img src="img/lineup/lineup4.jpg" alt="クリームパンの写真" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modalFive" class="modal close">
+            <div class="modal-bg">
+              <div class="modal-closebtn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div>
+                  <img src="img/lineup/lineup5.jpeg" alt="ベーグルの写真" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modalSix" class="modal close">
+            <div class="modal-bg">
+              <div class="modal-closebtn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div>
+                  <img src="img/lineup/lineup6.jpeg" alt="レーズンパンの写真" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modalSeven" class="modal close">
+            <div class="modal-bg">
+              <div class="modal-closebtn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div>
+                  <img src="img/lineup/lineup7.jpeg" alt="ロールパンの写真" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modalEight" class="modal close">
+            <div class="modal-bg">
+              <div class="modal-closebtn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div>
+                  <img src="img/lineup/lineup8.jpeg" alt="あんぱんの写真" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modalNine" class="modal close">
+            <div class="modal-bg">
+              <div class="modal-closebtn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div>
+                  <img src="img/lineup/lineup9.jpeg" alt="焼きそばパンの写真" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modalTen" class="modal close">
+            <div class="modal-bg">
+              <div class="modal-closebtn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div>
+                  <img src="img/lineup/lineup10.jpeg" alt="メロンパンの写真" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modalEleven" class="modal close">
+            <div class="modal-bg">
+              <div class="modal-closebtn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div>
+                  <img
+                    src="img/lineup/lineup11.jpeg"
+                    alt="プレッツェルの写真"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modalTwelve" class="modal close">
+            <div class="modal-bg">
+              <div class="modal-closebtn close">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="modal-content">
+                <div>
+                  <img src="img/lineup/lineup12.jpeg" alt="くるみパンの写真" />
                 </div>
               </div>
             </div>
           </div>
         </section>
       </div>
+      <footer class="footer">
+        <div class="welcome_area">
+          <div class="smoke"></div>
+          <p class="welcome_txt">WELCOME TO <br />FOREST BAKERY!!</p>
+        </div>
+        <div class="footer_txt_area">
+          <p id="page-top"><a class="pagetop" href="#">PAGE TOP</a></p>
+          <p class="footer_shopname">FOREST BAKERY</p>
+          <p class="footer_adress">〒639-1058 奈良県大和郡山市XX-XX</p>
+        </div>
+      </footer>
     </main>
   </body>
+  <script
+    src="https://kit.fontawesome.com/be9648ab57.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="js/main.js"></script>
   <script src="js/lineup.js"></script>
 </html>
